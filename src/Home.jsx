@@ -1,8 +1,13 @@
 import React from 'react'
+import SquareButton from './SquareButton'
 
 function home() {
   return (
-    <h1>home</h1>
+    <div className='text-center'>
+      <h1>Welcome to Quiztacular</h1>
+      <span>Made by: Zacharyah Whitcher and Andrew Sherrer</span>
+      <SquareButton text='Play' destination='/Catagory'></SquareButton>
+    </div>
   )
 }
 
