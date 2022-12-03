@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './Home';
-import Catagory from './Catagory';
-import Quiz from './Quiz';
-import Result from './Result';
-import Leaderboard from './Leaderboard';
+import Catagory from './catagory';
+import Quiz from './quiz';
+import result from './result';
+import Leaderboard from './leaderboard';
 import NotFound from './NotFound';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -18,7 +18,7 @@ root.render(
       <Route path="/home" element={<Home/>}/>
       <Route path="/catagory" element={<Catagory/>}/>
       <Route path="/quiz" element={<Quiz/>}/>
-      <Route path="/result" element={<Result/>}/>
+      <Route path="/result" element={<result/>}/>
       <Route path="/leaderboard" element={<Leaderboard/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
