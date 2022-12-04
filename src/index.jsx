@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './Home';
+import Home from './home';
 import Catagory from './catagory';
 import Quiz from './quiz';
 import Result from './result';
 import Leaderboard from './leaderboard';
-import NotFound from './NotFound';
+import NotFound from './notFound';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 

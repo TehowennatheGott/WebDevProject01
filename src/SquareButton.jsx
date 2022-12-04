@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function SquareButton(props) {
   return (
     <div>
-        <Link to={props.destination} className='btn btn-lg text-bg-secondary px-5 w-25 rounded-2'>{props.text}</Link>
+        <Link to={props.destination} className='btn btn-lg text-bg-secondary px-5 rounded-2'>{props.text}</Link>
     </div>
   )
 }
