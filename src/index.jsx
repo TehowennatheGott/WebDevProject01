@@ -5,7 +5,7 @@ import Home from './home';
 import Catagory from './catagory';
 import Quiz from './quiz';
 import Result from './result';
-import Leaderboard from './leaderboard';
+import Leaderboard from './Leaderboard';
 import NotFound from './notFound';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -19,7 +19,7 @@ root.render(
       <Route path="/catagory" element={<Catagory/>}/>
       <Route path="/quiz" element={<Quiz/>}/>
       <Route path="/result" element={<Result/>}/>
-      <Route path="/leaderboard" element={<Leaderboard/>}/>
+      <Route path="/Leaderboard" element={<Leaderboard/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
   </BrowserRouter>
