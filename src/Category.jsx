@@ -2,16 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import PillButton from './PillButton'
 
-
+const backstring = '<= Back'
 function Category() {
   return (
     <div>
-      <Link to='/Home' className='btn btn-sm text-bg-light rounded-0 border border-secondary px-3 ms-1 mt-2'>Back</Link>
+      <Link to='/Home' className='btn btn-sm text-bg-light rounded-0 border border-secondary px-3 ms-1 mt-2'>{backstring}</Link>
       <div className='flex-container text-center'>
         <div className="row">
-          <h1>New Quiz</h1>
+          <h1>History Quiz</h1>
         </div>
-        <div className="row">
+        <div className="row mt-2">
           <h5>Please select a category</h5>
         </div>
         <div className="row my-5">
