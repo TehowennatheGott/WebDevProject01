@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import PillButton from './PillButton'
 
-function quiz() {
+function Quiz() {
   return (
     <div>
       <div className='flex-container text-center'>
@@ -39,4 +39,4 @@ function quiz() {
   )
 }
 
-export default quiz
+export default Quiz

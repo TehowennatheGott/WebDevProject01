@@ -2,7 +2,7 @@ import React from 'react';
 import Row from './Row.jsx';
 import SquareButton from './SquareButton.jsx';
 
-function leaderboard() {
+function Leaderboard() {
   return (
     <div>
       <div className="">
@@ -35,4 +35,4 @@ function leaderboard() {
   )
 }
 
-export default leaderboard
+export default Leaderboard
