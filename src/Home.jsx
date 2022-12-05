@@ -1,7 +1,7 @@
 import React from 'react'
 import SquareButton from './SquareButton'
 
-function home() {
+function Home() {
   return (
     <div className='text-center'>
       <h1>Welcome to Quiztacular</h1>
@@ -11,4 +11,4 @@ function home() {
   )
 }
 
-export default home
+export default Home
