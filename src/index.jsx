@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './home';
-import Catagory from './catagory';
-import Quiz from './quiz';
-import Result from './result';
-import Leaderboard from './leaderboard';
-import NotFound from './notFound';
+import Home from './Home';
+import Category from './Category';
+import Quiz from './Quiz';
+import Result from './Result';
+import Leaderboard from './Leaderboard';
+import NotFound from './NotFound';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -15,11 +15,11 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route index element={<Home/>}/>
-      <Route path="/home" element={<Home/>}/>
-      <Route path="/catagory" element={<Catagory/>}/>
-      <Route path="/quiz" element={<Quiz/>}/>
-      <Route path="/result" element={<Result/>}/>
-      <Route path="/leaderboard" element={<Leaderboard/>}/>
+      <Route path="/Home" element={<Home/>}/>
+      <Route path="/Catagory" element={<Category/>}/>
+      <Route path="/Quiz" element={<Quiz/>}/>
+      <Route path="/Result" element={<Result/>}/>
+      <Route path="/Leaderboard" element={<Leaderboard/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
   </BrowserRouter>
