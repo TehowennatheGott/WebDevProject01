@@ -6,7 +6,7 @@ function Home() {
     <div className='text-center'>
       <h1>Welcome to Quiztacular</h1>
       <span>Made by: Zacharyah Whitcher and Andrew Sherrer</span>
-      <SquareButton text='Play' destination='/Catagory'></SquareButton>
+      <SquareButton text='Play' destination='/Category'></SquareButton>
     </div>
   )
 }

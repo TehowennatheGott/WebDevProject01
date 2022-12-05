@@ -17,12 +17,12 @@ function Result() {
             <input type="text" id="name" name="name"/>
           </div>
           <div className="col-6 px-5">
-            <SquareButton destination="/leaderboard" text="Save score to leaderboard" />
+            <SquareButton destination="/Leaderboard" text="Save score to leaderboard" />
           </div>
         </div>
       </div>
       <div className="text-center">
-        <SquareButton destination="/catagory" text="Replay" />
+        <SquareButton destination="/Category" text="Replay" />
       </div>
     </div>
     </>

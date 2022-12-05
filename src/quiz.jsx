@@ -20,18 +20,18 @@ function Quiz() {
         </div>
         <div className="row my-5">
           <div className="col text-end mx-5">
-            <PillButton text='Option 1' destination='/result'></PillButton>
+            <PillButton text='Option 1' destination='/Result'></PillButton>
           </div>
           <div className="col text-start mx-5">
-            <PillButton text='Option 2' destination='/result'></PillButton>
+            <PillButton text='Option 2' destination='/Result'></PillButton>
           </div>
         </div>
         <div className="row my-5">
           <div className="col text-end mx-5">
-            <PillButton text='Option 3' destination='/result'></PillButton>
+            <PillButton text='Option 3' destination='/Result'></PillButton>
           </div>
           <div className="col text-start mx-5">
-            <PillButton text='Option 4' destination='/result'></PillButton>
+            <PillButton text='Option 4' destination='/Result'></PillButton>
           </div>
         </div>
       </div>

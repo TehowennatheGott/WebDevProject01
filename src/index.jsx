@@ -16,7 +16,7 @@ root.render(
     <Routes>
       <Route index element={<Home/>}/>
       <Route path="/Home" element={<Home/>}/>
-      <Route path="/Catagory" element={<Category/>}/>
+      <Route path="/Category" element={<Category/>}/>
       <Route path="/Quiz" element={<Quiz/>}/>
       <Route path="/Result" element={<Result/>}/>
       <Route path="/Leaderboard" element={<Leaderboard/>}/>

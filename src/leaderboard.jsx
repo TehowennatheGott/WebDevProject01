@@ -12,7 +12,7 @@ function Leaderboard() {
               <h1 className="mt-5 pt-5 pb-3 pe-5 text-end">Top Scores</h1>
             </div>
             <div className="col text-end pt-5 mt-3 pe-3">
-              <SquareButton style="" destination="/catagory" text="Replay" />
+              <SquareButton style="" destination="/Category" text="Replay" />
             </div>
           </div>
         </div>
