@@ -1,8 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { authorizationToken, top10route } from './constants.js';
 import Row from './Row.jsx';
 import SquareButton from './SquareButton.jsx';
 
 function Leaderboard() {
+
+  const [scores, setscores] = useState([])
+
+  useEffect(() => {
+    // TODO
+    // Called upon component mount
+    fetchScores()
+  }, [])
+
+  async function fetchScores(){
+    const options = {
+      method: "GET",
+      headers: {
+        "Authorization": authorizationToken
+      }
+    }
+
+    const response = await fetch(top10route, options)
+
+    console.log('response.status: ', response.status);
+
+    const data = await response.json();
+    console.log('data: ', data);
+    
+  }
   return (
     <div>
       <div className="">
