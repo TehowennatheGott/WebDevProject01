@@ -46,16 +46,11 @@ function Leaderboard() {
         <br/><br/>
         <div className="container-fluid w-75 text-center">
           <Row name="Name" category="Category" score="Score" style="fw-bold"/>
-          <Row name={scores[0].name} category={scores[0].categoryName} score={scores[0].score}/>
-          <Row name={scores[1].name} category={scores[1].categoryName} score={scores[1].score}/>
-          <Row name={scores[2].name} category={scores[2].categoryName} score={scores[2].score}/>
-          <Row name={scores[3].name} category={scores[3].categoryName} score={scores[3].score}/>
-          <Row name={scores[4].name} category={scores[4].categoryName} score={scores[4].score}/>
-          <Row name={scores[5].name} category={scores[5].categoryName} score={scores[5].score}/>
-          <Row name={scores[6].name} category={scores[6].categoryName} score={scores[6].score}/>
-          <Row name={scores[7].name} category={scores[7].categoryName} score={scores[7].score}/>
-          <Row name={scores[8].name} category={scores[8].categoryName} score={scores[8].score}/>
-          <Row name={scores[9].name} category={scores[9].categoryName} score={scores[9].score}/>
+
+          {scores.map((scoreData, index) => {
+                    return <Row key={index} name={scoreData.name} category={scoreData.categoryName} score={scoreData.score}/>
+                })}
+
         </div>
       </div>
     </div>
