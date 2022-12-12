@@ -7,9 +7,10 @@ const backstring = '<= Back'
 function Category() {
 
   let categoryInfo = [{name: null}, {id: null}]
+  
   useEffect(() => {
     localStorage.setItem("categoryInfo", JSON.stringify(categoryInfo));
-  }, [])
+  })
 
   function categorySelection(categoryName, categoryId){
 
@@ -18,9 +19,10 @@ function Category() {
 
     localStorage.setItem("categoryInfo", JSON.stringify(categoryInfo))
   }
+  
   return (
     <div>
-      <Link to='/Home' className='btn btn-sm text-bg-light rounded-0 border border-secondary px-3 ms-1 mt-2'>Back</Link>
+      <Link to='/Home' className='btn btn-sm text-bg-light rounded-0 border border-secondary px-3 ms-1 mt-2'>{backstring}</Link>
       <div className='flex-container text-center'>
         <div className="row">
           <h1>New Quiz</h1>

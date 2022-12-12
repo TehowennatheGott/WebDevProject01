@@ -3,3 +3,5 @@ export const authorizationToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1l
 export const top10route = "https://quiz-leaderboard-58cf6.nn.r.appspot.com/scores/top10";
 
 export const openTDhost = "https://opentdb.com/api.php"
+
+export const scoreRoute = "https://quiz-leaderboard-58cf6.nn.r.appspot.com/scores"

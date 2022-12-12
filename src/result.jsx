@@ -1,19 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { authorizationToken } from './constants.js';
+import { authorizationToken, scoreRoute } from './constants.js';
 import SquareButton from './SquareButton';
 
 function Result(props) 
 {
-
-
   const JSONstring = localStorage.getItem("categoryInfo");
   const categoryData = JSON.parse(JSONstring);
-  console.log('data: ', categoryData); 
 
   const navigate = useNavigate()
   const score = props.score;
-  const category = categoryData[0].name;
+  const categoryName = categoryData[0].name;
   const categoryID = categoryData[1].id;
   let playerName = "";
 
@@ -24,11 +21,10 @@ function Result(props)
   async function PostName()
   {
     playerName = document.getElementById("name").value
-    console.log('playerName: ', playerName);
 
     if(playerName.length > 0){
-  
-      const url = "https://quiz-leaderboard-58cf6.nn.r.appspot.com/scores"
+      
+      const url = scoreRoute;
       
       const options ={      
         method: "POST",
@@ -41,14 +37,14 @@ function Result(props)
           "name": playerName,
           "score": score,
           "categoryId": categoryID,
-          "categoryName": category
+          "categoryName": categoryName
         })
       }
       
-      const response = await fetch(url, options)
-      console.log('post response.status: ', response.status);
+      await fetch(url, options)
       
       await navigateToApp();
+
       alert('Added to leaderboards');
     }
     else

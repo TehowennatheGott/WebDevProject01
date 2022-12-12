@@ -8,8 +8,6 @@ function Leaderboard() {
   const [scores, setscores] = useState([])
 
   useEffect(() => {
-    // TODO
-    // Called upon component mount
     fetchScores()
   }, [])
 
@@ -23,10 +21,7 @@ function Leaderboard() {
 
     const response = await fetch(top10route, options)
 
-    console.log('response.status: ', response.status);
-
     const data = await response.json();
-    console.log('data: ', data);
 
     setscores(data);
   }
@@ -46,11 +41,9 @@ function Leaderboard() {
         <br/><br/>
         <div className="container-fluid w-75 text-center">
           <Row name="Name" category="Category" score="Score" style="fw-bold"/>
-
           {scores.map((scoreData, index) => {
                     return <Row key={index} name={scoreData.name} category={scoreData.categoryName} score={scoreData.score}/>
                 })}
-
         </div>
       </div>
     </div>
