@@ -79,6 +79,9 @@ function Play() {
                                 {!quizFinished ?
                                     <div className="container">
                                         <div className="row">
+                                        <div className="col-12 text-center h2">{selectedCategory.name}</div>
+                                        </div>
+                                        <div className="row">
                                             <div className="col-12 text-center h2">Question {activeQuestionIndex + 1}/{numberOfQuestions}</div>
                                         </div>
                                         <div className="row">
