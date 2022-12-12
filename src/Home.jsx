@@ -19,6 +19,9 @@ function home() {
           <div className="col py-4">
             <SquareButton text='Play' destination='/Category'></SquareButton>
           </div>
+          <div className="col py-4">
+            <SquareButton text='Leaderboard' destination='/Leaderboard'></SquareButton>
+          </div>
         </div>
       </div>
     </div>
