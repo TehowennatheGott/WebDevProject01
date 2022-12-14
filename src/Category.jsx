@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import SquareButton from './SquareButton'
 import PillButton from './PillButton'
 
 const backstring = '<= Back'
@@ -22,27 +22,29 @@ function Category() {
   
   return (
     <div>
-      <Link to='/Home' className='btn btn-sm text-bg-light rounded-0 border border-secondary px-3 ms-1 mt-2'>{backstring}</Link>
-      <div className='flex-container text-center'>
+      <div className='flex container rounded text-center pt-3 mt-5' style={{backgroundColor: 'rgb(255, 235, 205)'}}>
+        <div className="row text-start">
+          <SquareButton destination="/Home" text={backstring}/>
+        </div>
         <div className="row">
-          <h1>New Quiz</h1>
+            <h1>New Quiz</h1>
         </div>
         <div className="row">
           <h5>Please select a category</h5>
         </div>
         <div className="row my-5">
-          <div className="col text-end mx-5" onClick={() => categorySelection('Mythology', 20)}>
+          <div className="col-6 text-end" onClick={() => categorySelection('Mythology', 20)}>
             <PillButton text='Mythology' destination='/Play'></PillButton>
           </div>
-          <div className="col text-start mx-5" onClick={() => categorySelection('Geography', 22)}>
+          <div className="col-6 text-start" onClick={() => categorySelection('Geography', 22)}>
             <PillButton text='Geopgraphy' destination='/Play'></PillButton>
           </div>
         </div>
         <div className="row my-5">
-          <div className="col text-end mx-5" onClick={() => categorySelection('Video Games', 15)}>
+          <div className="col-6 text-end" onClick={() => categorySelection('Video Games', 15)}>
             <PillButton text='Video Games' destination='/Play'></PillButton>
           </div>
-          <div className="col text-start mx-5" onClick={() => categorySelection('Film', 11)}>
+          <div className="col-6 mb-5 text-start" onClick={() => categorySelection('Film', 11)}>
             <PillButton text='Films' destination='/Play'></PillButton>
           </div>
         </div>

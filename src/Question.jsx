@@ -11,7 +11,7 @@ function Question({ question, correct_answer, incorrect_answers, selectAnswerHan
 
         return _.shuffle(allAnswers.map((answer, index) => {
             return <div className="col-6 text-center" key={index}>
-                <button className='btn btn-info w-75 m-2 py-4 rounded-pill' onClick={() => selectAnswerHandler(answer)}>{decode(answer.text)}</button>
+                <button className='btn btn-secondary w-75 m-2 py-4 rounded-pill' onClick={() => selectAnswerHandler(answer)}>{decode(answer.text)}</button>
             </div>
         }))
     }

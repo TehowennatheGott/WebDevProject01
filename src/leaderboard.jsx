@@ -26,27 +26,29 @@ function Leaderboard() {
     setscores(data);
   }
   return (
-    <div>
-      <div>
-        <div className="container-fluid">
-          <div className="row m-0 p-0">
-            <div className="col-8 p-0">
-              <h1 className="mt-5 pt-5 pb-3 pe-5 text-end">Top Scores</h1>
-            </div>
-            <div className="col text-end pt-5 mt-3 pe-3">
-              <SquareButton destination="/Category" text="Replay"/>
-            </div>
+    <>
+      <div className='flex container rounded text-center pt-3 mt-5' style={{backgroundColor: 'rgb(255, 235, 205)'}}>
+        <div className="row">
+          <div className="col-4"/>
+          <div className="col-4">
+            <h1 className="text-center">Top Scores</h1>
+          </div>
+          <div className="col-4 text-end">
+            <SquareButton destination="/Category" text="Replay"/>
           </div>
         </div>
-        <br/><br/>
-        <div className="container-fluid w-75 text-center">
-          <Row name="Name" category="Category" score="Score" style="fw-bold"/>
-          {scores.map((scoreData, index) => {
-                    return <Row key={index} name={scoreData.name} category={scoreData.categoryName} score={scoreData.score}/>
-                })}
+        <div className="row py-4 text-center">
+          <div className="col"/>
+          <div className="col-10 text-center">
+            <Row name="Name" category="Category" score="Score" style="fw-bold text-bg-secondary"/>
+            {scores.map((scoreData, index) => { 
+            return <Row key={index} name={scoreData.name} category={scoreData.categoryName} score={scoreData.score} style="text-bg-light"/>
+            })}
+          </div>
+          <div className="col"/>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

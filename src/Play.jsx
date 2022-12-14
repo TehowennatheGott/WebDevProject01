@@ -3,7 +3,8 @@ import Question from './Question';
 import Spinner from './Spinner';
 import Result from './Result';
 import { openTDhost } from './constants';
-import { Link } from 'react-router-dom'
+import SquareButton from './SquareButton';
+
 
 function Play() {
 
@@ -56,6 +57,7 @@ function Play() {
 
         if (answer.correct) {
             setScore((value) => value + 1); // increment score
+            alert("Good Answer!");
         }
 
         if (activeQuestionIndex === numberOfQuestions - 1) {
@@ -72,7 +74,7 @@ function Play() {
     }
 
     return (
-        <div className='container rounded p-4 my-2' style={{ backgroundColor: "#c0deff" }}>
+        <div className='container rounded p-4 my-2' style={{ backgroundColor: "rgb(255, 235, 205)" }}>
             <div className="row">
                 {
                     isLoading ? <Spinner light={true} size={4}></Spinner>
@@ -82,7 +84,7 @@ function Play() {
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-12">
-                                                <Link to='/Home' className='btn btn-sm text-end text-bg-light rounded-0 border border-secondary px-3 ms-1 mt-2'>Stop</Link>
+                                            <SquareButton destination="/Home" text="Stop"/>
                                             </div>
                                         </div>
                                         <div className="row">
