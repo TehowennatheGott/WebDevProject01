@@ -4,9 +4,8 @@ import Background from './images/404meme.png';
 function NotFound() {
   return (
     <>
-      <div className="text-left" style={{backgroundImage: "url(" + Background + ")", minwidth: "100vw", minHeight: "100vh", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center"}}>
-        <h1 className="fw-bolder">404 Not Found</h1>
-      </div>
+        <h1 className='flex container rounded text-center mt-2' style={{backgroundColor: 'rgb(255, 235, 205)', maxWidth: '300px'}}>404 Not Found</h1>
+        <div className="" style={{backgroundImage: "url(" + Background + ")", maxWidth: '210vh', height: '91vh', backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center"}}></div>
     </>
   )
 }
