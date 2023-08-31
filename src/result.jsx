@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { authorizationToken, scoreRoute } from './constants.js';
-import SquareButton from './SquareButton';
+import SquareButton from './SquareButton.jsx';
 
 function Result(props) 
 {
