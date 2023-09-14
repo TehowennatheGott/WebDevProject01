@@ -8,6 +8,8 @@ import NotFound from './NotFound';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Play from './Play';
+import Multiplayer from './Multiplayer';
+import MultiplayerChoice from './MultiplayerChoice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +20,11 @@ root.render(
       <Route path="/Category" element={<Category/>}/>
       <Route path="/Play" element={<Play/>}/>
       <Route path="/Leaderboard" element={<Leaderboard/>}/>
+
+      <Route path='multiplayer' element={<Multiplayer/>}>
+        <Route path='choice' element={<MultiplayerChoice/>}>
+      </Route></Route>
+
       <Route path="*" element={<NotFound/>}/>
     </Routes>
   </BrowserRouter>
