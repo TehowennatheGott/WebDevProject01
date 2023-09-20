@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './Home';
 import Category from './Category';
-import Leaderboard from './Leaderboard';
+import Leaderboard from './leaderboard.jsx';
 import NotFound from './NotFound';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Play from './Play';
 import Multiplayer from './Multiplayer';
 import MultiplayerChoice from './MultiplayerChoice';
+import PlayerLobby from './PlayerLobby'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,7 +24,11 @@ root.render(
 
       <Route path='multiplayer' element={<Multiplayer/>}>
         <Route path='choice' element={<MultiplayerChoice/>}>
-      </Route></Route>
+        <Route path='PlayerLobby' element={<PlayerLobby/>}>
+        </Route>
+          </Route>
+            </Route>
+      
 
       <Route path="*" element={<NotFound/>}/>
     </Routes>

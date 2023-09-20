@@ -12,7 +12,7 @@ function home() {
         </div>
         <div className="row">
           <div className="col py-4 fw-semibold">
-            <span>Made by: Zacharyah Whitcher and Andrew Sherrer</span>
+            <span>Made by: Tehowennathe Gott and Andrew Sherrer</span>
           </div>
         </div>
         <div className="row">
@@ -21,7 +21,7 @@ function home() {
           </div>
           <div className="col py-4 text-start">
             <SquareButton 
-            text='Leaderboard' destination='/Leaderboard'></SquareButton>
+            text='Multiplayer' destination='/Multiplayer'></SquareButton>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Question from './Question';
 import Spinner from './Spinner';
-import Result from './Result';
+import Result from './result.jsx';
 import { openTDhost } from './constants';
 import SquareButton from './SquareButton';
 
